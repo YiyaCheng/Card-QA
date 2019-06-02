@@ -143,7 +143,7 @@ public class CardFragment extends Fragment {
         });
 
         //todo
-        String str = getFromAssets("submit.json", getContext());
+        /*String str = getFromAssets("submit.json", getContext());
         try{
             QuestionSaveApi apiBase = new QuestionSaveApi(mCurrentInfo.question_id,
                     String.valueOf(option));
@@ -157,7 +157,7 @@ public class CardFragment extends Fragment {
             mainActivity.setBottomTipView(apiBase.mRankInfo.correct_count);
         }catch (Exception ex) {
             ex.printStackTrace();
-        }
+        }*/
     }
 
     /**
@@ -197,7 +197,7 @@ public class CardFragment extends Fragment {
         if(option == 1) {
             if(isCorrect) {
                 rightOption = 1;
-                //mainActivity.startRain();
+                mainActivity.startRain();//启动表情雨
             }else{
                 rightOption = 2;
             }
@@ -207,7 +207,7 @@ public class CardFragment extends Fragment {
         }else{
             if(isCorrect) {
                 rightOption = 2;
-                //mainActivity.startRain();
+                mainActivity.startRain();
             }else{
                 rightOption = 1;
             }

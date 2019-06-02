@@ -51,10 +51,11 @@
         android:clipChildren="false">
     </android.support.v4.view.ViewPager>
 
-    <nickgao.com.emotionrain.EmotionRainView
-        android:id="@+id/emotion_rain_view"
+    <com.example.yiya.card_qa.view.EmotionRainView
+        android:id="@+id/emotionrain_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent" >
+    </com.example.yiya.card_qa.view.EmotionRainView>
 
     <TextView
         android:layout_below="@+id/viewpager"

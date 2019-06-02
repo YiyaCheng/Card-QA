@@ -6,10 +6,9 @@ import java.util.List;
 
 /**
  * Created by Yiya on 2019/6/2.
- * 用于更新UI
  */
 
 public interface ITestView {
-    void updateUI(List<QuestionInfo> list);
+    void updateUI(List<QuestionInfo> list);//用于更新UI
     void setBottomTipView(String count);//count表示答对多少题
 }
