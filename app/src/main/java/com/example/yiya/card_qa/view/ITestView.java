@@ -11,4 +11,5 @@ import java.util.List;
 
 public interface ITestView {
     void updateUI(List<QuestionInfo> list);
+    void setBottomTipView(String count);//count表示答对多少题
 }

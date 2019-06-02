@@ -43,4 +43,9 @@ public class MainActivity extends FragmentActivity implements ITestView{
         viewpager.setAdapter(mAdapter);
         viewpager.setOffscreenPageLimit(3);//知道viewpager缓存3个页面
     }
+
+    @Override
+    public void setBottomTipView(String count) {
+        tvBottomText.setText("恭喜你累计答对"+count+"题");
+    }
 }

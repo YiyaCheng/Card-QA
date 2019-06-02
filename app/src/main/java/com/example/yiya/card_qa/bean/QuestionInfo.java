@@ -15,4 +15,5 @@ public class QuestionInfo implements Serializable{
     public List<String> options = new ArrayList<String>();
     public int type;// 1表示答对，2表示答错
     public String option;//表示用户的做答是什么
+    public String explain;//答案解析
 }
